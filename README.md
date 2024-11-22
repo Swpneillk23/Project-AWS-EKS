@@ -56,14 +56,17 @@
 3. After installing AWS CLI, we need to configure aws by running the below command :
 
       aws configure
-
-      AWS Access Key ID [None]: 
-      AWS Secret Access Key [None]: 
+      <br>
+      AWS Access Key ID [None]:
+      <br>
+      AWS Secret Access Key [None]:
+      <br>
       Default region name [None]: us-east-1
+      <br>
       Default output format [None]: 
 
 
-4. Install docker by running the command :
+5. Install docker by running the command :
 
    sudo yum install docker -y 
 
@@ -71,7 +74,7 @@
 
    Check Status of docker by the command : sudo service docker status
 
-5. Install terraform :
+6. Install terraform :
 
    a. Use yum-config-manager to add the official HashiCorp Linux repository :
 
@@ -85,31 +88,31 @@
 
       kubectl version --client
    
-6. To fetch cluster information, we need to update the kubeconfig file:
+7. To fetch cluster information, we need to update the kubeconfig file:
 
      aws eks update-kubeconfig --region <region> --name <cluster-name>
 
      aws eks update-kubeconfig --region us-east-1 --name demo
 
-7. If you want to list the name of clusters, you can do it by running the below command:
+8. If you want to list the name of clusters, you can do it by running the below command:
 
      aws eks list-clusters
 
-8. Go to the project directory and then go inside terraform directory and run below terraform commands:
+9. Go to the project directory and then go inside terraform directory and run below terraform commands:
 
-     1. terraform init
+ 1. terraform init
 
      Initializes a new or existing Terraform configuration. This sets up the working directory and downloads necessary providers and modules.
-
-     2. terraform validate
+ 
+ 2. terraform validate
 
      Checks whether the Terraform configuration files are valid.
 
-     3. terraform plan
+ 3. terraform plan
  
      Creates an execution plan, showing what actions Terraform will take to achieve the desired state.
 
-     4. terraform apply
+ 4. terraform apply
  
      Executes the actions proposed in the plan to create or update resources.
 
@@ -117,7 +120,7 @@
 
      terraform apply -auto-approve
 
-     5. When you want to destroys all infrastructure managed by the Terraform configuration. Run below command:
+ 5. When you want to destroys all infrastructure managed by the Terraform configuration. Run below command:
 
      terraform destroy -auto-approve
 
