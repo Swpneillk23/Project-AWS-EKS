@@ -100,29 +100,29 @@
 
 9. Go to the project directory and then go inside terraform directory and run below terraform commands:
 
- 1. terraform init
+   1. terraform init
 
-     Initializes a new or existing Terraform configuration. This sets up the working directory and downloads necessary providers and modules.
+        Initializes a new or existing Terraform configuration. This sets up the working directory and downloads necessary providers and modules.
  
- 2. terraform validate
+   2. terraform validate
 
-     Checks whether the Terraform configuration files are valid.
+        Checks whether the Terraform configuration files are valid.
 
- 3. terraform plan
+   3. terraform plan
  
-     Creates an execution plan, showing what actions Terraform will take to achieve the desired state.
+        Creates an execution plan, showing what actions Terraform will take to achieve the desired state.
 
- 4. terraform apply
+   4. terraform apply
  
-     Executes the actions proposed in the plan to create or update resources.
+        Executes the actions proposed in the plan to create or update resources.
 
-     If you want Auto-approve without prompt you can use the below command:
+        If you want Auto-approve without prompt you can use the below command:
 
-     terraform apply -auto-approve
+        terraform apply -auto-approve
 
- 5. When you want to destroys all infrastructure managed by the Terraform configuration. Run below command:
+   5. When you want to destroys all infrastructure managed by the Terraform configuration. Run below command:
 
-     terraform destroy -auto-approve
+        terraform destroy -auto-approve
 
 
    
