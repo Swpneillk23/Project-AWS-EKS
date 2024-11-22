@@ -80,5 +80,49 @@
    b. Install Terraform from the new repository :
 
       sudo yum -y install terraform
+   
+   c. Test to ensure the version you installed is up-to-date:
+
+      kubectl version --client
+   
+6. To fetch cluster information, we need to update the kubeconfig file:
+
+     aws eks update-kubeconfig --region <region> --name <cluster-name>
+
+     aws eks update-kubeconfig --region us-east-1 --name demo
+
+7. If you want to list the name of clusters, you can do it by running the below command:
+
+     aws eks list-clusters
+
+8. Go to the project directory and then go inside terraform directory and run below terraform commands:
+
+     1. terraform init
+
+     Initializes a new or existing Terraform configuration. This sets up the working directory and downloads necessary providers and modules.
+
+     2. terraform validate
+
+     Checks whether the Terraform configuration files are valid.
+
+     3. terraform plan
+ 
+     Creates an execution plan, showing what actions Terraform will take to achieve the desired state.
+
+     4. terraform apply
+ 
+     Executes the actions proposed in the plan to create or update resources.
+
+     If you want Auto-approve without prompt you can use the below command:
+
+     terraform apply -auto-approve
+
+     5. When you want to destroys all infrastructure managed by the Terraform configuration. Run below command:
+
+     terraform destroy -auto-approve
+
+
+   
+
 
 
