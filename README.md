@@ -125,7 +125,7 @@
         terraform destroy -auto-approve
 
 
-10. To see how kubeseal works,go here https://medium.com/@swapnilk708/managing-secrets-deployment-in-kubernetes-using-sealed-secrets-9fa06f99f6e9
+10. To see how kubeseal works,go here https://medium.com/@swapnilk708/managing-secrets-deployment-in-kubernetes-using-sealed-secrets-37c5ba9ac80c
 
 
    
