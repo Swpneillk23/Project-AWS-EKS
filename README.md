@@ -86,7 +86,7 @@
    
    c. Test to ensure the version you installed is up-to-date:
 
-      kubectl version --client
+      terraform --version
    
 7. To fetch cluster information, we need to update the kubeconfig file:
 
